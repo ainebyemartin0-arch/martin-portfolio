@@ -9,7 +9,7 @@ export default function AboutPage() {
         <div className="w-48 h-48 md:w-64 md:h-64 relative shrink-0">
           <div className="absolute inset-0 bg-accent rounded-full blur-2xl opacity-20 animate-pulse"></div>
           <Image 
-            src="/profile.jpg" 
+            src="/profile.png" 
             alt="Ainebye Martin" 
             width={256} 
             height={256} 

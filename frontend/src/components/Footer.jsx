@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Mail, MapPin } from "lucide-react";
 import { GitHubIcon, LinkedInIcon, WhatsAppIcon } from "./Icons";
 
@@ -19,8 +20,11 @@ export default function Footer() {
           
           {/* Brand & Bio */}
           <div className="col-span-2 md:col-span-1">
-            <Link href="/" className="font-heading text-2xl font-bold tracking-tight text-slate-900 dark:text-white">
-              Martin<span className="text-accent">.dev</span>
+            <Link href="/" className="flex items-center gap-3">
+              <Image src="/Logo.png" alt="Martin Logo" width={40} height={40} className="rounded-lg" />
+              <span className="font-heading text-2xl font-bold tracking-tight text-slate-900 dark:text-white">
+                Martin<span className="text-accent">.dev</span>
+              </span>
             </Link>
             <p className="mt-4 text-sm text-slate-500 leading-relaxed">
               Full-Stack Developer & IT Specialist building scalable web applications and resilient networks.

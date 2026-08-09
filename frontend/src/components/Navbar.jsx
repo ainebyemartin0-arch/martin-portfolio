@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { ThemeToggle } from "./ThemeToggle";
 
@@ -18,8 +19,11 @@ export default function Navbar() {
   return (
     <nav className="sticky top-0 z-50 backdrop-blur-xl bg-white/70 dark:bg-slate-950/70 border-b border-slate-200 dark:border-slate-800">
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-        <Link href="/" className="font-heading text-xl font-bold tracking-tight">
-          Martin<span className="text-accent">.dev</span>
+        <Link href="/" className="flex items-center gap-3">
+          <Image src="/Logo.png" alt="Martin Logo" width={36} height={36} priority className="rounded-lg" />
+          <span className="font-heading text-xl font-bold tracking-tight hidden sm:block">
+            Martin<span className="text-accent">.dev</span>
+          </span>
         </Link>
         
         <div className="hidden lg:flex items-center space-x-1 text-sm font-medium text-slate-600 dark:text-slate-300 bg-slate-100 dark:bg-slate-900 rounded-full p-1">

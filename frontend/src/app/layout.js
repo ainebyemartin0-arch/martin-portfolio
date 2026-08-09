@@ -6,6 +6,9 @@ import Footer from "@/components/Footer";
 export const metadata = {
   title: "Ainebye Martin | Full-Stack Developer",
   description: "Premium portfolio of Ainebye Martin.",
+  icons: {
+    icon: '/Logo.png',
+  },
 };
 
 export default function RootLayout({ children }) {
